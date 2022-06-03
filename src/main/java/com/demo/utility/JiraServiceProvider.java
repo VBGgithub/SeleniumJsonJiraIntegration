@@ -110,7 +110,7 @@ public class JiraServiceProvider {
 		httpClient.getCredentialsProvider().setCredentials(
 				new AuthScope(targetHost.getHostName(), targetHost.getPort(), targetHost.getSchemeName()),
 				new UsernamePasswordCredentials(userName, password));
-String editURL=com.demo.configuration.Configuration.urlJira+"/rest/api/2/issue/"+createdIssueId+"/transitions";
+String editURL=com.demo.configuration.Configuration.urlJira+"rest/api/2/issue/"+createdIssueId+"/transitions";
 
 System.out.println("editURL"+editURL);
 		HttpPost httpPost = new HttpPost(editURL);
